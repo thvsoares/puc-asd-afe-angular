@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PesquisaImagemService } from 'app/pesquisa-imagem.service';
 
 @Component({
   selector: 'app-pesquisa',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PesquisaComponent implements OnInit {
 
-  constructor() { }
+  constructor(PesquisaImagemService) { }
 
   ngOnInit() {
   }
 
+  pesquisar() {
+    //return PesquisaImagemService.();
+  }
 }
