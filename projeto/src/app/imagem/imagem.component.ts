@@ -12,4 +12,8 @@ export class ImagemComponent implements OnInit {
   ngOnInit() {
   }
 
+  trocaImagem() {
+    this.imageUrl = "http://lorempixel.com/600/400/people/" + Math.floor(Math.random() * 10).toString();
+  }
+
 }
